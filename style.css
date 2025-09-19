@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+h2 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.ball-img {
+  width: 180px;
+  transition: transform 0.4s ease;
+}
+.ball-img:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+#hobbyText {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff6600;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background: #e05500;
+  transform: scale(1.05);
+}
+
+#quoteBox {
+  margin-top: 20px;
+  font-style: italic;
+  color: #444;
+  min-height: 30px;
+}
+
+footer {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 0.9rem;
+}
